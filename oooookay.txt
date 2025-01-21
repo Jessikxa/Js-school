@@ -1,0 +1,32 @@
+oooookay
+
+galgje 
+
+alert waarin je een een woord kan typen die gegokt moet wordn --> NAME: guessWord
+
+    streepjes gekozen woord verschijnen op beeld????? hoe woord/ letters woord  opslaan??????
+
+    alert waarin staat dat je een letter moet typen. --> NAME: guessLetter
+    ingetypte letter wordt vergeleken met ingetypte woord{
+        10 levens (int nodig voor levens die omlaag bij verkeerde letter) --> NAME: livesLeft
+    }
+
+    als dat letter in het woord zit zal het verschijnen op het corresponderend(e) streepje{
+        als woord juist gegokt - alert "you win" --> NAME: winAlert
+    }
+    
+    als het letter NIET in het woord zit verlies je een leven.{
+        als alle levens op zijn - alert "you lose" --> NAME: loseAlert
+    }
+
+
+    voor geraadde letter en levens{
+        zou je het ingetypte woord opslaan als een array? want dan heb je het individuele char ipv het woord aan elkaar.
+         zo kan je ook de streepjes tekenen? 
+        misschien een boolean? dat de char(letters) in het het array gelijk is aan true. alle andere char is false? and if 
+    }
+
+
+
+    vragen :
+    how correct letter opslaan + op scherm verschijnen? hoe in html zetten????????/
