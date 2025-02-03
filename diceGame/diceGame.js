@@ -11,7 +11,7 @@ const winloss = document.getElementById("winLose");
 const yDob = document.getElementById("urDob");
 const cDob = document.getElementById("comDob");
 
-let dice= [0,0];
+let dice= [0,0,0,0];
 //ydob and cdob into var so that u can compare them easier
 
 
@@ -49,22 +49,22 @@ myButton.addEventListener("click", event => {
         dice[i] = Math.floor(Math.random() * 6 + 1);
     }
 
-    yDob.textContent = dice[0];
-    cDob.textContent = dice[1];
-    if(dice[0] > dice[1]){
+    yDob.textContent = dice[0] + " " + dice[1];
+    cDob.textContent = dice[2] + " " + dice[3];
+    if(dice[0] + dice[1] > dice[2] + dice[3]){
         // alert("you win");
         Wonst++;
         winst.textContent = `winst: ${Wonst}`;
         winloss.textContent = "You Win!";
     }
 
-    else if(dice[0] < dice[1]){
+    else if(dice[0] + dice[1] < dice[2] + dice[3]){
         Verloss++;
         verlies.textContent = `Verlies: ${Verloss}`;
         winloss.textContent = "You Lose!";
     }
 
-    else if(dice[0] == dice[1]){
+    else if(dice[0] + dice[1] == dice[2] + dice[3]){
         // alert("Gelijkspel");
         Gelykspel++;
         gelijkspel.textContent = `Gelijkspel: ${Gelykspel}`
@@ -72,27 +72,7 @@ myButton.addEventListener("click", event => {
     }
 });
 
-// (dice[0] == dice[1])
 
-// myButton.addEventListener("click", event =>{
-//     if(yDob > cDob){
-//         alert("you win");
-//         // Winst.textContent = `winst: ${event}`;
-//     }
-// })
-
-// myButton.addEventListener("click", event => {
-
-//     if(yDob > cDob){
-//         Winst++;
-//     }
-//     if(yDob = cDob){
-//         Gelijkspel++;
-//     } 
-//     if(yDob < cDob){
-//         Verlies++;
-//     }
-// });
 
 myButton.addEventListener("mouseover", event => {
     event.target.style.backgroundColor = "green";
