@@ -4,10 +4,13 @@ const exampleStrong = document.getElementById("wordPickk");
 const btn = document.getElementById("btn");
 const displo = document.getElementById("displo");
 
+word = exampleStrong.value
 
-function fun1(){
+function WordToDash(){
     const lengthOfString = exampleStrong.value.length;
-    displo.innerHTML = exampleStrong.value + " " + lengthOfString;
+    const word = exampleStrong.value;
+    const wordDasg = "-" * len(word);
+    displo.innerHTML = wordDasg + " " + lengthOfString;
 }
 
 btn.addEventListener('click' ,fun1);
