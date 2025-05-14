@@ -14,9 +14,12 @@
         </section>
 
         <section>
-            <input type="text" id="wordPickk">
-            <input type="button" id="btn" >
-
+            <form name="form">
+                <input type="text" id="wordPickk" maxlength="1" placeholder="Fill in a letter">
+                <input type="button" onclick="IsEmpty();" onclick = "return "  id="btn" >
+            </form>
+            
+            <!-- a to z keys only, no other keys. space not recognized but already displayed(without streepje) -->
             <p id="displo"></p>
         </section>
          
